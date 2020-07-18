@@ -1,5 +1,5 @@
 # Student dormitory management system
-My first C project in Nanchang University in 2015
+My first C project in Nanchang University: 2015.12.30 - 2016.1.12
 ## Project introduction
 This project is a student dormitory management system, in which users can input student information and sort it according to certain criteria. After sorting, the student’s other relevant information can be searched by the student’s dormitory information or vice versa.
 ## Functional requirements
