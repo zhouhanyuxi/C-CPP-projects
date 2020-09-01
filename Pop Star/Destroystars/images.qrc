@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/star">
+        <file>images/2.jpg</file>
+        <file>images/10.png</file>
+        <file>images/16.png</file>
+        <file>images/blue_blank.png</file>
+        <file>images/game.jpg</file>
+        <file>images/green_blank.png</file>
+        <file>images/orange_blank.png</file>
+        <file>images/pink_blank.png</file>
+        <file>images/purple_blank.png</file>
+        <file>images/timg.jpg</file>
+        <file>images/tubiao.ico</file>
+        <file>images/yellow_blank.png</file>
+        <file>images/enddialog.jpg</file>
+        <file>images/shubiao.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>game</class>
+ <widget class="QWidget" name="game">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>PopStar</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 75 &quot;微软雅黑&quot;;
+</string>
+  </property>
+  <widget class="QLabel" name="scoreLabel">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>20</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+font: 12pt &quot;微软雅黑&quot;;
+color: rgb(239, 255, 155);</string>
+   </property>
+   <property name="text">
+    <string>分数：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="gameBackBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nandulabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>20</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+font: 75 12pt &quot;微软雅黑&quot;;
+color: rgb(239, 255, 155);</string>
+   </property>
+   <property name="text">
+    <string>难度：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="timesLabel">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>20</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+font: 75 12pt &quot;微软雅黑&quot;;
+color: rgb(239, 255, 155);</string>
+   </property>
+   <property name="text">
+    <string>消除次数：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="newBtn">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>60</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>重新开始</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="musicPushButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>3</y>
+     <width>26</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backgroundLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>581</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/star/images/game.jpg);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>backgroundLabel</zorder>
+  <zorder>scoreLabel</zorder>
+  <zorder>gameBackBtn</zorder>
+  <zorder>nandulabel</zorder>
+  <zorder>timesLabel</zorder>
+  <zorder>newBtn</zorder>
+  <zorder>musicPushButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

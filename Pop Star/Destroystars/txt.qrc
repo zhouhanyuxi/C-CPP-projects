@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/myTxt">
+        <file>help.txt</file>
+        <file>xieyi.txt</file>
+    </qresource>
+</RCC>

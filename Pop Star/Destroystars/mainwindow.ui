@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>318</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PopStar</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>321</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page_2">
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/star/images/2.jpg);</string>
+     </property>
+     <widget class="QPushButton" name="RecordBtn">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>270</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+background-color: rgb(171, 201, 255);</string>
+      </property>
+      <property name="text">
+       <string>分数记录</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="HelpBtn">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>330</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+background-color: rgb(171, 201, 255);</string>
+      </property>
+      <property name="text">
+       <string>帮助</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="typecomboBox">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>220</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+font: bold 14px;
+
+color: rgb(88, 88, 88);
+
+padding: 6px;
+background: transparent;
+background-color: rgb(171, 201, 255);
+border-style: outset;
+border-width: 4px;
+border-radius: 10px;
+border-color: rgba(255, 225, 255, 30);
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>简单</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>中等</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>复杂</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="startBtn">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>160</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+background-color: rgb(171, 201, 255);</string>
+      </property>
+      <property name="text">
+       <string>开始游戏</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="agreementBtn">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>410</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+font:bold 8pt &quot;Arial&quot;;
+color: rgb(227, 221, 42);
+</string>
+      </property>
+      <property name="text">
+       <string>用户协议</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>301</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*QTableView 左上角样式*/
+QTableView QTableCornerButton::section {
+   /*  background: red;
+    border: 2px outset red;*/
+    color: red;
+    background-color: rgb(206, 207, 255);
+    border: 5px solid #f6f7fa;
+    border-radius:0px;
+    border-color:  rgb(206, 207, 255);
+ }
+
+ QTableView {
+    color: black;                                       /*表格内文字颜色*/
+    gridline-color: black;                              /*表格内框颜色*/
+    /*background-color: rgb(85, 170, 255);*/               /*表格内背景色*/
+    alternate-background-color: rgb(206, 207, 255);
+    selection-color: white;                             /*选中区域的文字颜色*/
+    /*selection-background-color: rgb(29, 143, 191);*/        /*选中区域的背景色*/
+    border: 2px groove gray;
+    border-radius: 0px;
+    padding: 2px 4px;
+}
+
+QHeaderView {
+    color: black;
+    font: bold 10pt;
+    background-color:  rgb(206, 207, 255);
+    border: 0px solid rgb(144, 144, 144);
+    border:0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:0px;
+    min-height:29px;
+}
+
+QHeaderView::section {
+    color: black;
+    background-color:  rgb(206, 207, 255);
+    
+    /*border-color:rgb(65, 179, 255);*/
+} </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fanhuiBtn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>简单</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>中等</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>复杂</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
